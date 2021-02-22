@@ -1,0 +1,8 @@
+.layout {
+  width: 100%;
+  max-width: 960px;
+  min-height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
