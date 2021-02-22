@@ -14,7 +14,7 @@ function AboutPage() {
       <p>Use Context1 (GlobalState) for Counter</p>
       <p>Use Context2 (AuthState) for Auth</p>
       <p>Use Local Storage with custom Hook</p>
-      <p>Custom Light/Dark Theme (No flashing)(Default system theme)</p>
+      <p>Custom Light/Dark Theme(Default system theme)</p>
       <p>Create icon components with SVGR</p>
       <p>Use PostCSS</p>
       <p>and Prettier use with ESlint and Airbnb code style</p>
