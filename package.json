@@ -29,5 +29,8 @@
     "postcss-nested": "^5.0.3",
     "prettier": "^2.2.1"
   },
+  "peerDependencies": {
+    "postcss":"^8.2.6"
+  },
   "license": "MIT"
 }
