@@ -9,6 +9,10 @@ function MyApp({ Component, pageProps }) {
     <Provider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="a NEXTjs template created by @frekans7"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
