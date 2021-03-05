@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="a NEXTjs template created by @frekans7"
         />
-        <meta name="robots" content="index" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
