@@ -29,6 +29,7 @@ function HomePage() {
         <div>
           <button
             type="button"
+            aria-label="decrement"
             onClick={() => {
               dispatch({ type: 'DECREMENT', payload: 1 });
             }}
@@ -37,6 +38,7 @@ function HomePage() {
           </button>
           <button
             type="button"
+            aria-label="reset"
             onClick={() => {
               dispatch({ type: 'RESET', payload: 0 });
             }}
@@ -45,6 +47,7 @@ function HomePage() {
           </button>
           <button
             type="button"
+            aria-label="increment"
             onClick={() => {
               dispatch({ type: 'INCREMENT', payload: 1 });
             }}
@@ -53,17 +56,21 @@ function HomePage() {
           </button>
         </div>
         <p />
-        <input
-          type="checkbox"
-          checked={state2.auth}
-          onChange={() => {
-            dispatch2({ type: 'AUTH', payload: state2.auth });
-          }}
-        />
-        {state2.auth === false ? 'Login' : 'Logout'}
+        <label>
+          <input
+            type="checkbox"
+            checked={state2.auth}
+            onChange={() => {
+              dispatch2({ type: 'AUTH', payload: state2.auth });
+            }}
+          />
+          {state2.auth === false ? 'Login' : 'Logout'}
+        </label>
         <p />
         <h3>Text: {myLocal} </h3>
-        <input onChange={(e) => setMyLocal(e.target.value)} value={myLocal} />
+        <label>
+          <input onChange={(e) => setMyLocal(e.target.value)} value={myLocal} />
+        </label>
       </main>
     </Layout>
   );

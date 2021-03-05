@@ -29,13 +29,13 @@ body {
 body {
   --background: #faf4f8;
   --text-color: rgba(0, 0, 0, 0.87);
-  --link: #3182ce;
+  --link: blue;
 }
 
 body.dark {
   --background: #1a202c;
   --text-color: #f7fafc;
-  --link: #63b3ed;
+  --link: lightblue;
 }
 
 main {
