@@ -15,7 +15,12 @@ const ToggleTheme = () => {
 
   if (!mount) return null;
   return (
-    <button type="button" onClick={toggleTheme} className={styles.toggle}>
+    <button
+      type="button"
+      aria-label="toggleTheme"
+      onClick={toggleTheme}
+      className={styles.toggle}
+    >
       {theme === 'light' ? <Moon /> : <Sun />}
     </button>
   );
